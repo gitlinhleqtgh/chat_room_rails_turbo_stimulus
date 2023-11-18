@@ -5,13 +5,15 @@ application up and running.
 
 Things you may want to cover:
 
-- Ruby version
+- Ruby version 3.0.0
+- Rails version 7.0.0
 
 - System dependencies
 
 - Configuration
 
 - Database creation
+- Sqlite
 
 - Database initialization
 
@@ -21,7 +23,6 @@ Things you may want to cover:
 
 - Deployment instructions
 
-- ...
 
 # chat_room_rails_turbo_stimulus
 
