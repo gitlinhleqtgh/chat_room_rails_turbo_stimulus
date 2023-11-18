@@ -11,6 +11,9 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema[7.1].define(version: 2023_11_18_041259) do
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "table_chat_rooms", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
@@ -18,8 +21,8 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_18_041259) do
   end
 
   create_table "table_messages", primary_key: ["user_id", "chat_room_id"], force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "chat_room_id"
+    t.integer "user_id", null: false
+    t.integer "chat_room_id", null: false
     t.string "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

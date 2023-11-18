@@ -13,7 +13,7 @@ Things you may want to cover:
 - Configuration
 
 - Database creation
-- Sqlite
+- pg
 
 - Database initialization
 
@@ -23,7 +23,6 @@ Things you may want to cover:
 
 - Deployment instructions
 
-
 # chat_room_rails_turbo_stimulus
 
-tech: rails turbo streams, stimulus, taiwind
+tech: rails turbo streams, stimulus, taiwindcss
